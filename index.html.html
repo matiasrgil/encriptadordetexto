@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador de Texto de Matias</title>
+        <link rel="stylesheet" href="./1-encriptador.css">
+    </head>
+    
+    <body>
+        <header>
+            <img class="imagen-logo" src="./imagenes/Logo.png" alt="Logo Alura">
+        </header>
+        <main>
+            <section id="section-izq">
+                <textarea type="text" class="caja-izq" cols="40" rows="6"  placeholder="Ingrese el texto aqui"></textarea>
+                
+            </section>
+            
+            <h6 class="leyenda"><img src="./imagenes/Vector.png"> Solo letras minusculas y sin acentos</h6>
+
+            <div class="botonera">
+                <button type="boton" class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button type="boton" class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+
+            <section id="section-der">
+                <textarea type="text" cols="18" rows="8" class="caja-der"></textarea>
+                
+            </section>
+
+            <div>
+                <img src="./imagenes/Muñeco.png" alt="muñeco indica no hay texto" class="imagen-muñeco">
+            </div>
+
+            <div class="leyenda-der" >
+                <p class="p1">Ningun mensaje fue encontrado</p>
+                <p class="p2">Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+            <div>
+                <button type="boton" class="btn-copiar" onclick="copiar();">Copiar</button>
+            </div>
+        </main>       
+    </body>
+
+    <footer>
+        <p class="rodapie">Este encriptador es obra de Matias</p>
+    </footer>
+
+    <script src="./1-encriptador.js"></script>
+
+    </html>
